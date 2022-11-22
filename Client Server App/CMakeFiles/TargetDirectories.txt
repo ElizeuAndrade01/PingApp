@@ -1,3 +1,0 @@
-/home/lds/Desktop/PingApp/Client Server App/CMakeFiles/rebuild_cache.dir
-/home/lds/Desktop/PingApp/Client Server App/CMakeFiles/edit_cache.dir
-/home/lds/Desktop/PingApp/Client Server App/CMakeFiles/ClientServerApp.dir
