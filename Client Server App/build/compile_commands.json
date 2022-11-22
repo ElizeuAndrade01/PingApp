@@ -1,7 +1,52 @@
 [
 {
-  "directory": "/home/lds/Desktop/Client Server App/build",
-  "command": "/usr/bin/c++   -I\"/home/lds/Desktop/Client Server App/libs\" -I\"/home/lds/Desktop/Client Server App/client\" -I\"/home/lds/Desktop/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerApp.dir/main.cpp.o -c \"/home/lds/Desktop/Client Server App/main.cpp\"",
-  "file": "/home/lds/Desktop/Client Server App/main.cpp"
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerAppC.dir/main.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/main.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/main.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerAppC.dir/client/client.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/client/client.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/client/client.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerAppC.dir/icmpPacket.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/icmpPacket.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/icmpPacket.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerAppC.dir/socket.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/socket.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/socket.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerAppC.dir/utils.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/utils.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/utils.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerApp.dir/main.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/main.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/main.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerApp.dir/server/server.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/server/server.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/server/server.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/icmpPacket.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/icmpPacket.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerApp.dir/socket.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/socket.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/socket.cpp"
+},
+{
+  "directory": "/home/lds/Desktop/PingApp/Client Server App/build",
+  "command": "/usr/bin/g++   -I\"/home/lds/Desktop/PingApp/Client Server App/libs\" -I\"/home/lds/Desktop/PingApp/Client Server App/client\" -I\"/home/lds/Desktop/PingApp/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerApp.dir/utils.cpp.o -c \"/home/lds/Desktop/PingApp/Client Server App/utils.cpp\"",
+  "file": "/home/lds/Desktop/PingApp/Client Server App/utils.cpp"
 }
 ]

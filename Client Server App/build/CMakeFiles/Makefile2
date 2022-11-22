@@ -44,15 +44,16 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lds/Desktop/Client Server App"
+CMAKE_SOURCE_DIR = "/home/lds/Desktop/PingApp/Client Server App"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lds/Desktop/Client Server App/build"
+CMAKE_BINARY_DIR = "/home/lds/Desktop/PingApp/Client Server App/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/ClientServerAppC.dir/all
 all: CMakeFiles/ClientServerApp.dir/all
 
 .PHONY : all
@@ -63,9 +64,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/ClientServerAppC.dir/clean
 clean: CMakeFiles/ClientServerApp.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ClientServerAppC.dir
+
+# All Build rule for target.
+CMakeFiles/ClientServerAppC.dir/all:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/depend
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" --progress-num=7,8,9,10,11,12 "Built target ClientServerAppC"
+.PHONY : CMakeFiles/ClientServerAppC.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ClientServerAppC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" 6
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ClientServerAppC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" 0
+.PHONY : CMakeFiles/ClientServerAppC.dir/rule
+
+# Convenience name for target.
+ClientServerAppC: CMakeFiles/ClientServerAppC.dir/rule
+
+.PHONY : ClientServerAppC
+
+# clean rule for target.
+CMakeFiles/ClientServerAppC.dir/clean:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/clean
+.PHONY : CMakeFiles/ClientServerAppC.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ClientServerApp.dir
@@ -74,14 +103,14 @@ clean: CMakeFiles/ClientServerApp.dir/clean
 CMakeFiles/ClientServerApp.dir/all:
 	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/depend
 	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lds/Desktop/Client Server App/build/CMakeFiles" --progress-num=1,2 "Built target ClientServerApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target ClientServerApp"
 .PHONY : CMakeFiles/ClientServerApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ClientServerApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/Client Server App/build/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ClientServerApp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/Client Server App/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" 0
 .PHONY : CMakeFiles/ClientServerApp.dir/rule
 
 # Convenience name for target.

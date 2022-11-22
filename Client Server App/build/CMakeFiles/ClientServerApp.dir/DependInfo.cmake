@@ -4,7 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lds/Desktop/Client Server App/main.cpp" "/home/lds/Desktop/Client Server App/build/CMakeFiles/ClientServerApp.dir/main.cpp.o"
+  "/home/lds/Desktop/PingApp/Client Server App/icmpPacket.cpp" "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o"
+  "/home/lds/Desktop/PingApp/Client Server App/main.cpp" "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles/ClientServerApp.dir/main.cpp.o"
+  "/home/lds/Desktop/PingApp/Client Server App/server/server.cpp" "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles/ClientServerApp.dir/server/server.cpp.o"
+  "/home/lds/Desktop/PingApp/Client Server App/socket.cpp" "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles/ClientServerApp.dir/socket.cpp.o"
+  "/home/lds/Desktop/PingApp/Client Server App/utils.cpp" "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles/ClientServerApp.dir/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
