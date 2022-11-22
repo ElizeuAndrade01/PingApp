@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lds/Desktop/Client Server App"
+CMAKE_SOURCE_DIR = "/home/lds/Desktop/PingApp/Client Server App"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lds/Desktop/Client Server App/build"
+CMAKE_BINARY_DIR = "/home/lds/Desktop/PingApp/Client Server App/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ClientServerApp.dir/depend.make
@@ -59,28 +59,88 @@ include CMakeFiles/ClientServerApp.dir/flags.make
 
 CMakeFiles/ClientServerApp.dir/main.cpp.o: CMakeFiles/ClientServerApp.dir/flags.make
 CMakeFiles/ClientServerApp.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lds/Desktop/Client Server App/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClientServerApp.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClientServerApp.dir/main.cpp.o -c "/home/lds/Desktop/Client Server App/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClientServerApp.dir/main.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClientServerApp.dir/main.cpp.o -c "/home/lds/Desktop/PingApp/Client Server App/main.cpp"
 
 CMakeFiles/ClientServerApp.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClientServerApp.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lds/Desktop/Client Server App/main.cpp" > CMakeFiles/ClientServerApp.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lds/Desktop/PingApp/Client Server App/main.cpp" > CMakeFiles/ClientServerApp.dir/main.cpp.i
 
 CMakeFiles/ClientServerApp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClientServerApp.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lds/Desktop/Client Server App/main.cpp" -o CMakeFiles/ClientServerApp.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lds/Desktop/PingApp/Client Server App/main.cpp" -o CMakeFiles/ClientServerApp.dir/main.cpp.s
+
+CMakeFiles/ClientServerApp.dir/server/server.cpp.o: CMakeFiles/ClientServerApp.dir/flags.make
+CMakeFiles/ClientServerApp.dir/server/server.cpp.o: ../server/server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClientServerApp.dir/server/server.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClientServerApp.dir/server/server.cpp.o -c "/home/lds/Desktop/PingApp/Client Server App/server/server.cpp"
+
+CMakeFiles/ClientServerApp.dir/server/server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClientServerApp.dir/server/server.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lds/Desktop/PingApp/Client Server App/server/server.cpp" > CMakeFiles/ClientServerApp.dir/server/server.cpp.i
+
+CMakeFiles/ClientServerApp.dir/server/server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClientServerApp.dir/server/server.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lds/Desktop/PingApp/Client Server App/server/server.cpp" -o CMakeFiles/ClientServerApp.dir/server/server.cpp.s
+
+CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o: CMakeFiles/ClientServerApp.dir/flags.make
+CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o: ../icmpPacket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o -c "/home/lds/Desktop/PingApp/Client Server App/icmpPacket.cpp"
+
+CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lds/Desktop/PingApp/Client Server App/icmpPacket.cpp" > CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.i
+
+CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lds/Desktop/PingApp/Client Server App/icmpPacket.cpp" -o CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.s
+
+CMakeFiles/ClientServerApp.dir/socket.cpp.o: CMakeFiles/ClientServerApp.dir/flags.make
+CMakeFiles/ClientServerApp.dir/socket.cpp.o: ../socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ClientServerApp.dir/socket.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClientServerApp.dir/socket.cpp.o -c "/home/lds/Desktop/PingApp/Client Server App/socket.cpp"
+
+CMakeFiles/ClientServerApp.dir/socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClientServerApp.dir/socket.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lds/Desktop/PingApp/Client Server App/socket.cpp" > CMakeFiles/ClientServerApp.dir/socket.cpp.i
+
+CMakeFiles/ClientServerApp.dir/socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClientServerApp.dir/socket.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lds/Desktop/PingApp/Client Server App/socket.cpp" -o CMakeFiles/ClientServerApp.dir/socket.cpp.s
+
+CMakeFiles/ClientServerApp.dir/utils.cpp.o: CMakeFiles/ClientServerApp.dir/flags.make
+CMakeFiles/ClientServerApp.dir/utils.cpp.o: ../utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ClientServerApp.dir/utils.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClientServerApp.dir/utils.cpp.o -c "/home/lds/Desktop/PingApp/Client Server App/utils.cpp"
+
+CMakeFiles/ClientServerApp.dir/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClientServerApp.dir/utils.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lds/Desktop/PingApp/Client Server App/utils.cpp" > CMakeFiles/ClientServerApp.dir/utils.cpp.i
+
+CMakeFiles/ClientServerApp.dir/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClientServerApp.dir/utils.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lds/Desktop/PingApp/Client Server App/utils.cpp" -o CMakeFiles/ClientServerApp.dir/utils.cpp.s
 
 # Object files for target ClientServerApp
 ClientServerApp_OBJECTS = \
-"CMakeFiles/ClientServerApp.dir/main.cpp.o"
+"CMakeFiles/ClientServerApp.dir/main.cpp.o" \
+"CMakeFiles/ClientServerApp.dir/server/server.cpp.o" \
+"CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o" \
+"CMakeFiles/ClientServerApp.dir/socket.cpp.o" \
+"CMakeFiles/ClientServerApp.dir/utils.cpp.o"
 
 # External object files for target ClientServerApp
 ClientServerApp_EXTERNAL_OBJECTS =
 
 ClientServerApp: CMakeFiles/ClientServerApp.dir/main.cpp.o
+ClientServerApp: CMakeFiles/ClientServerApp.dir/server/server.cpp.o
+ClientServerApp: CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o
+ClientServerApp: CMakeFiles/ClientServerApp.dir/socket.cpp.o
+ClientServerApp: CMakeFiles/ClientServerApp.dir/utils.cpp.o
 ClientServerApp: CMakeFiles/ClientServerApp.dir/build.make
 ClientServerApp: CMakeFiles/ClientServerApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lds/Desktop/Client Server App/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ClientServerApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ClientServerApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClientServerApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -93,6 +153,6 @@ CMakeFiles/ClientServerApp.dir/clean:
 .PHONY : CMakeFiles/ClientServerApp.dir/clean
 
 CMakeFiles/ClientServerApp.dir/depend:
-	cd "/home/lds/Desktop/Client Server App/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lds/Desktop/Client Server App" "/home/lds/Desktop/Client Server App" "/home/lds/Desktop/Client Server App/build" "/home/lds/Desktop/Client Server App/build" "/home/lds/Desktop/Client Server App/build/CMakeFiles/ClientServerApp.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lds/Desktop/PingApp/Client Server App/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lds/Desktop/PingApp/Client Server App" "/home/lds/Desktop/PingApp/Client Server App" "/home/lds/Desktop/PingApp/Client Server App/build" "/home/lds/Desktop/PingApp/Client Server App/build" "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles/ClientServerApp.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/ClientServerApp.dir/depend
 

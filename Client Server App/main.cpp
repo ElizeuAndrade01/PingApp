@@ -1,7 +1,7 @@
 #include <thread>
 
-#include "./client/client.cpp"
-#include "./server/server.cpp"
+#include "./libs/client.h"
+#include "./libs/server.h"
 
 void start_server()
 {

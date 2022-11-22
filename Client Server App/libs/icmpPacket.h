@@ -19,10 +19,25 @@ private:
 public:  
     IcmpPacket();
     IcmpPacket(uint8_t p_Type, uint8_t p_Code, uint16_t p_Checksum, uint16_t p_Identifier,
-               uint16_t p_SequenceNumber, std::string p_Payload
-    );
+               uint16_t p_SequenceNumber, std::string p_Payload);
+
     std::shared_ptr<std::vector<uint8_t>> encode();
-    static std::shared_ptr<IcmpPacket> decode(const std::shared_ptr<std::vector<uint8_t>>& inputPacket);
+    static std::shared_ptr<IcmpPacket> decode(const std::shared_ptr<std::vector<uint8_t>>& inputPacket)
+{
+    std::shared_ptr<IcmpPacket> pkt = std::make_shared<IcmpPacket>();
+    pkt->setType(inputPacket->at(0));
+    pkt->setCode(inputPacket->at(1));
+    pkt->setChecksum((inputPacket->at(2) << 8) + inputPacket->at(3));
+    pkt->setIdentifier((inputPacket->at(4) << 8) + inputPacket->at(5));
+    pkt->setSequenceNumber((inputPacket->at(6) << 8) + inputPacket->at(7));
+
+    std::string payload_msg;
+    for (auto i = inputPacket->begin()+8; i != inputPacket->end(); ++i){
+        payload_msg.push_back(*i);
+    }
+    pkt->setPayload(payload_msg);
+    return pkt;
+}
 
     uint8_t getType() const;
     uint8_t getCode() const;

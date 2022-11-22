@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lds/Desktop/Client Server App"
+CMAKE_SOURCE_DIR = "/home/lds/Desktop/PingApp/Client Server App"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lds/Desktop/Client Server App/build"
+CMAKE_BINARY_DIR = "/home/lds/Desktop/PingApp/Client Server App/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/Client Server App/build/CMakeFiles" "/home/lds/Desktop/Client Server App/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/Client Server App/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/lds/Desktop/PingApp/Client Server App/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ClientServerAppC
+
+# Build rule for target.
+ClientServerAppC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ClientServerAppC
+.PHONY : ClientServerAppC
+
+# fast build rule for target.
+ClientServerAppC/fast:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/build
+.PHONY : ClientServerAppC/fast
+
+#=============================================================================
 # Target rules for targets named ClientServerApp
 
 # Build rule for target.
@@ -123,12 +136,70 @@ ClientServerApp/fast:
 	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/build
 .PHONY : ClientServerApp/fast
 
+client/client.o: client/client.cpp.o
+
+.PHONY : client/client.o
+
+# target to build an object file
+client/client.cpp.o:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/client/client.cpp.o
+.PHONY : client/client.cpp.o
+
+client/client.i: client/client.cpp.i
+
+.PHONY : client/client.i
+
+# target to preprocess a source file
+client/client.cpp.i:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/client/client.cpp.i
+.PHONY : client/client.cpp.i
+
+client/client.s: client/client.cpp.s
+
+.PHONY : client/client.s
+
+# target to generate assembly for a file
+client/client.cpp.s:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/client/client.cpp.s
+.PHONY : client/client.cpp.s
+
+icmpPacket.o: icmpPacket.cpp.o
+
+.PHONY : icmpPacket.o
+
+# target to build an object file
+icmpPacket.cpp.o:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/icmpPacket.cpp.o
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o
+.PHONY : icmpPacket.cpp.o
+
+icmpPacket.i: icmpPacket.cpp.i
+
+.PHONY : icmpPacket.i
+
+# target to preprocess a source file
+icmpPacket.cpp.i:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/icmpPacket.cpp.i
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.i
+.PHONY : icmpPacket.cpp.i
+
+icmpPacket.s: icmpPacket.cpp.s
+
+.PHONY : icmpPacket.s
+
+# target to generate assembly for a file
+icmpPacket.cpp.s:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/icmpPacket.cpp.s
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.s
+.PHONY : icmpPacket.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/main.cpp.o
 	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/main.cpp.o
 .PHONY : main.cpp.o
 
@@ -138,6 +209,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/main.cpp.i
 .PHONY : main.cpp.i
 
@@ -147,8 +219,96 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+server/server.o: server/server.cpp.o
+
+.PHONY : server/server.o
+
+# target to build an object file
+server/server.cpp.o:
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/server/server.cpp.o
+.PHONY : server/server.cpp.o
+
+server/server.i: server/server.cpp.i
+
+.PHONY : server/server.i
+
+# target to preprocess a source file
+server/server.cpp.i:
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/server/server.cpp.i
+.PHONY : server/server.cpp.i
+
+server/server.s: server/server.cpp.s
+
+.PHONY : server/server.s
+
+# target to generate assembly for a file
+server/server.cpp.s:
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/server/server.cpp.s
+.PHONY : server/server.cpp.s
+
+socket.o: socket.cpp.o
+
+.PHONY : socket.o
+
+# target to build an object file
+socket.cpp.o:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/socket.cpp.o
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/socket.cpp.o
+.PHONY : socket.cpp.o
+
+socket.i: socket.cpp.i
+
+.PHONY : socket.i
+
+# target to preprocess a source file
+socket.cpp.i:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/socket.cpp.i
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/socket.cpp.i
+.PHONY : socket.cpp.i
+
+socket.s: socket.cpp.s
+
+.PHONY : socket.s
+
+# target to generate assembly for a file
+socket.cpp.s:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/socket.cpp.s
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/socket.cpp.s
+.PHONY : socket.cpp.s
+
+utils.o: utils.cpp.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.cpp.o:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/utils.cpp.o
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/utils.cpp.o
+.PHONY : utils.cpp.o
+
+utils.i: utils.cpp.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/utils.cpp.i
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) -f CMakeFiles/ClientServerAppC.dir/build.make CMakeFiles/ClientServerAppC.dir/utils.cpp.s
+	$(MAKE) -f CMakeFiles/ClientServerApp.dir/build.make CMakeFiles/ClientServerApp.dir/utils.cpp.s
+.PHONY : utils.cpp.s
 
 # Help Target
 help:
@@ -158,10 +318,26 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... ClientServerAppC"
 	@echo "... ClientServerApp"
+	@echo "... client/client.o"
+	@echo "... client/client.i"
+	@echo "... client/client.s"
+	@echo "... icmpPacket.o"
+	@echo "... icmpPacket.i"
+	@echo "... icmpPacket.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... server/server.o"
+	@echo "... server/server.i"
+	@echo "... server/server.s"
+	@echo "... socket.o"
+	@echo "... socket.i"
+	@echo "... socket.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ClientServerApp.dir/icmpPacket.cpp.o"
   "CMakeFiles/ClientServerApp.dir/main.cpp.o"
+  "CMakeFiles/ClientServerApp.dir/server/server.cpp.o"
+  "CMakeFiles/ClientServerApp.dir/socket.cpp.o"
+  "CMakeFiles/ClientServerApp.dir/utils.cpp.o"
   "ClientServerApp"
   "ClientServerApp.pdb"
 )

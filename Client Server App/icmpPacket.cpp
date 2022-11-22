@@ -1,6 +1,8 @@
 #include "libs/icmpPacket.h"
 #include <utility>
 
+IcmpPacket::IcmpPacket(){}
+
 IcmpPacket::IcmpPacket(uint8_t p_type,
                        uint8_t p_code,
                        uint16_t p_checksum,
@@ -34,22 +36,7 @@ std::shared_ptr<std::vector<uint8_t>> IcmpPacket::encode()
     }
     return pkt;
 }
-std::shared_ptr<IcmpPacket> IcmpPacket::decode(const std::shared_ptr<std::vector<uint8_t>>& inputPacket)
-{
-    std::shared_ptr<IcmpPacket> pkt = std::make_shared<IcmpPacket>();
-    pkt->setType(inputPacket->at(0));
-    pkt->setCode(inputPacket->at(1));
-    pkt->setChecksum((inputPacket->at(2) << 8) + inputPacket->at(3));
-    pkt->setIdentifier((inputPacket->at(4) << 8) + inputPacket->at(5));
-    pkt->setSequenceNumber((inputPacket->at(6) << 8) + inputPacket->at(7));
 
-    std::string payload_msg;
-    for (auto i = inputPacket->begin()+8; i != inputPacket->end(); ++i){
-        payload_msg.push_back(*i);
-    }
-    pkt->setPayload(payload_msg);
-    return pkt;
-}
 
 uint8_t IcmpPacket::getType() const                 {return type_;}
 uint8_t IcmpPacket::getCode() const                 {return code_;}
