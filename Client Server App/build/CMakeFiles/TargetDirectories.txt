@@ -1,0 +1,3 @@
+/home/lds/Desktop/Client Server App/build/CMakeFiles/rebuild_cache.dir
+/home/lds/Desktop/Client Server App/build/CMakeFiles/edit_cache.dir
+/home/lds/Desktop/Client Server App/build/CMakeFiles/ClientServerApp.dir

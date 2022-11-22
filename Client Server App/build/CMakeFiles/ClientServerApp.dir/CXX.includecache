@@ -1,0 +1,72 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lds/Desktop/Client Server App/client/client.cpp
+../libs/client.h
+/home/lds/Desktop/Client Server App/libs/client.h
+
+/home/lds/Desktop/Client Server App/libs/client.h
+icmpPacket.h
+/home/lds/Desktop/Client Server App/libs/icmpPacket.h
+socket.h
+/home/lds/Desktop/Client Server App/libs/socket.h
+utils.h
+/home/lds/Desktop/Client Server App/libs/utils.h
+
+/home/lds/Desktop/Client Server App/libs/icmpPacket.h
+vector
+-
+unistd.h
+-
+iostream
+-
+memory
+-
+
+/home/lds/Desktop/Client Server App/libs/server.h
+icmpPacket.h
+/home/lds/Desktop/Client Server App/libs/icmpPacket.h
+socket.h
+/home/lds/Desktop/Client Server App/libs/socket.h
+utils.h
+/home/lds/Desktop/Client Server App/libs/utils.h
+
+/home/lds/Desktop/Client Server App/libs/socket.h
+arpa/inet.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+memory
+-
+stdexcept
+-
+vector
+-
+
+/home/lds/Desktop/Client Server App/libs/utils.h
+iostream
+-
+memory
+-
+icmpPacket.h
+/home/lds/Desktop/Client Server App/libs/icmpPacket.h
+
+/home/lds/Desktop/Client Server App/main.cpp
+thread
+-
+./client/client.cpp
+/home/lds/Desktop/Client Server App/client/client.cpp
+./server/server.cpp
+/home/lds/Desktop/Client Server App/server/server.cpp
+
+/home/lds/Desktop/Client Server App/server/server.cpp
+../libs/server.h
+/home/lds/Desktop/Client Server App/libs/server.h
+

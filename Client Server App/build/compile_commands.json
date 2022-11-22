@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lds/Desktop/Client Server App/build",
+  "command": "/usr/bin/c++   -I\"/home/lds/Desktop/Client Server App/libs\" -I\"/home/lds/Desktop/Client Server App/client\" -I\"/home/lds/Desktop/Client Server App/server\"  -g   -std=gnu++11 -o CMakeFiles/ClientServerApp.dir/main.cpp.o -c \"/home/lds/Desktop/Client Server App/main.cpp\"",
+  "file": "/home/lds/Desktop/Client Server App/main.cpp"
+}
+]
