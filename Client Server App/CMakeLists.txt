@@ -12,8 +12,10 @@ include_directories(libs)
 include_directories(client)
 include_directories(server)
 
-add_executable(ClientServerApp main.cpp server/server.cpp icmpPacket.cpp socket.cpp utils.cpp)
+add_executable(ClientServerAppS mainServer.cpp server/server.cpp icmpPacket.cpp socket.cpp utils.cpp)
 
-add_executable(ClientServerAppC main.cpp client/client.cpp icmpPacket.cpp socket.cpp utils.cpp)
+add_executable(ClientServerAppC mainClient.cpp client/client.cpp icmpPacket.cpp socket.cpp utils.cpp)
 
-target_link_libraries(ClientServerApp PUBLIC pthread)
+target_link_libraries(ClientServerAppS PUBLIC pthread)
+
+target_link_libraries(ClientServerAppC PUBLIC pthread)
