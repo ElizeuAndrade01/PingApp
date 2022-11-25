@@ -1,6 +1,5 @@
 #include "../libs/server.h"
 
-
 Server::Server()
 {
     socketHandler_.openSocket();

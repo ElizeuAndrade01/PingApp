@@ -1,16 +1,42 @@
 #include "../libs/client.h"
 
-
 Client::Client()
 {
+    Client::initSocket();
+}
+
+
+std::string Client::setIp()
+{
+    std::cout << "Digite o ip que deseja pingar: ";
+    std::cin >> ip;
+    return ip;
+}
+
+uint16_t Client::setPort()
+{
+    std::cout << "Digite a port do ip que deseja pingar: ";
+    std::cin >> port;
+    return port;
+}
+
+void Client::initSocket(){
+    const uint16_t finalPort = Client::setPort();
+    const std::string finalIp = Client::setIp();
     socketHandler_.openSocket();
     socketHandler_.bind(CLIENT_PORT);
-    socketHandler_.connect(SERVER_PORT, "127.0.0.1");
+    socketHandler_.connect(finalPort, finalIp);
 }
+
+void Client::getIp()
+{
+    std::cout << ip;
+}
+
 
 void Client::send()
 {
-    echoMessage_ = std::make_shared<IcmpPacket> (8,0,0,getpid(),1,"Pingando do Client");
+    echoMessage_ = std::make_shared<IcmpPacket> (8,0,0,getpid(),1,"Ping");
     echoMessage_->setChecksum(IcmpPacket::computeChecksum(echoMessage_));
     sleep(1);
     socketHandler_.send(echoMessage_->encode());
