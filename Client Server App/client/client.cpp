@@ -1,4 +1,5 @@
 #include "../libs/client.h"
+#include <gtest/gtest.h>
 
 Client::Client()
 {
@@ -28,15 +29,14 @@ void Client::initSocket(){
     socketHandler_.connect(finalPort, finalIp);
 }
 
-void Client::getIp()
+std::string Client::getIp()
 {
-    std::cout << ip;
+    return ip;
 }
-
 
 void Client::send()
 {
-    echoMessage_ = std::make_shared<IcmpPacket> (8,0,0,getpid(),1,"Ping");
+    echoMessage_ = std::make_shared<IcmpPacket> (8,0,0,getpid(),1,"Hello from Client");
     echoMessage_->setChecksum(IcmpPacket::computeChecksum(echoMessage_));
     sleep(1);
     socketHandler_.send(echoMessage_->encode());
@@ -50,3 +50,4 @@ void Client::receive()
     echoMessage_ = IcmpPacket::decode(reply_buffer);
     Utils::displayInfo(echoMessage_, "ON CLIENT ECHO_REPLY  ");
 }
+

@@ -1,13 +1,15 @@
 #include <thread>
 
 #include "./libs/client.h"
+#include <gtest/gtest.h>
 
 void start_client()
 {
     try
     {
-        Client cliente;
-        cliente.send();
+        Client client;
+        client.send();
+
     }
     catch (const std::exception& e)
     {
@@ -17,7 +19,16 @@ void start_client()
     }
 }
 
-int main()
+TEST(ICMPACKETS, ICMPPACKETSSTARTNULL){
+    Client cTest;
+
+    std::string ip = cTest.getIp();
+
+    ASSERT_EQ(ip, NULL);
+}
+
+
+int main(int argc, char ** argv)
 {
     try
     {
@@ -31,4 +42,8 @@ int main()
     {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
+
+    testing::InitGoogleTest(&argc, argv);
+
+    return RUN_ALL_TESTS();
 }

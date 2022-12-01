@@ -2,13 +2,14 @@
 
 
 #include "./libs/server.h"
+#include <gtest/gtest.h>
 
 void start_server()
 {
     try
     {
-        Server servidor;
-        servidor.listen();
+        Server server;
+        server.listen();
     }
     catch (const std::exception& e)
     {
@@ -34,4 +35,8 @@ int main()
     {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
+
+    testing::InitGoogleTest();
+
+    return RUN_ALL_TESTS();
 }

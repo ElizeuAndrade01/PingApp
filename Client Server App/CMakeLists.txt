@@ -12,6 +12,8 @@ include_directories(libs)
 include_directories(client)
 include_directories(server)
 
+include_directories(googletest/include)
+
 add_executable(ClientServerAppS mainServer.cpp server/server.cpp icmpPacket.cpp socket.cpp utils.cpp)
 
 add_executable(ClientServerAppC mainClient.cpp client/client.cpp icmpPacket.cpp socket.cpp utils.cpp)
@@ -19,3 +21,7 @@ add_executable(ClientServerAppC mainClient.cpp client/client.cpp icmpPacket.cpp 
 target_link_libraries(ClientServerAppS PUBLIC pthread)
 
 target_link_libraries(ClientServerAppC PUBLIC pthread)
+
+target_link_libraries(ClientServerAppS PRIVATE gtest)
+
+target_link_libraries(ClientServerAppC PRIVATE gtest)
