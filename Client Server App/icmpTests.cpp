@@ -52,10 +52,10 @@ TEST(IcmpPacketTest, decodingSession){
     test_packet_dec.push_back(33);
 
     std::shared_ptr<IcmpPacket> test_packet_comp = std::make_shared<IcmpPacket>();
-    test_packet_comp->setType(8);
+    test_packet_comp->setType(2);
     test_packet_comp->setCode(0);
-    test_packet_comp->setChecksum(50920);
-    test_packet_comp->setIdentifier(3120);
+    test_packet_comp->setChecksum(12345);
+    test_packet_comp->setIdentifier(1234);
     test_packet_comp->setSequenceNumber(1);
     test_packet_comp->setPayload("salve!");
 
