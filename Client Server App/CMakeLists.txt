@@ -5,23 +5,21 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(CUSTOM_BUILD_PARAMS "-fno-exceptions")
 
-
-
 include_directories(libs)
 
 include_directories(client)
 include_directories(server)
 
-include_directories(googletest/include)
+include_directories(googletest)
 
-add_executable(ClientServerAppS mainServer.cpp server/server.cpp icmpPacket.cpp socket.cpp utils.cpp)
+add_executable(ClientServerAppS server/main_server.cc server/server.cc src/icmp_packet.cc src/socket.cc)
 
-add_executable(ClientServerAppC mainClient.cpp client/client.cpp icmpPacket.cpp socket.cpp utils.cpp)
+add_executable(ClientServerAppC client/main_client.cc client/client.cc src/icmp_packet.cc src/socket.cc)
 
 target_link_libraries(ClientServerAppS PUBLIC pthread)
 
 target_link_libraries(ClientServerAppC PUBLIC pthread)
 
-target_link_libraries(ClientServerAppS PRIVATE gtest)
+add_subdirectory(tests)
 
-target_link_libraries(ClientServerAppC PRIVATE gtest)
+add_subdirectory(googletest)

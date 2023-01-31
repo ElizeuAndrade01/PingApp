@@ -13,3 +13,4 @@ ClientServerAppC
 ClientServerAppS
 googletest
 .gitignore
+lib
